@@ -1,9 +1,14 @@
 ''' content of test_class.py '''
 
-def func(number):
-    ''' a simple add function '''
-    return number + 1
+class TestClass:
+    ''' a simple TestClass '''
 
-def test_answer():
-    ''' a simple test function '''
-    assert func(3) == 5
+    def test_one(self):
+        ''' a simple assert function '''
+        x = "this"
+        assert "h" in x
+
+    def test_two(self):
+        ''' a simple assert hasattr function '''
+        x = "hello"
+        assert hasattr(x, "check")
