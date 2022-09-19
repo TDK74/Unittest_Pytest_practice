@@ -15,7 +15,7 @@ class MyMath:
             number1 = int(number1)
         if not type(number2) == int:
             number2 = int(number2)
-        
+
         if isinstance(number1, int) and isinstance(number2, int):
             return number1 + number2 """
 

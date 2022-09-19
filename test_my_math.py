@@ -8,7 +8,7 @@ from my_math import MyMath
 
 class TestMyMath(unittest.TestCase):
     """ A sample class for testing of basic math functions """
-    
+
 
     def setUp(self):
         """ Executed before every test case """
@@ -26,7 +26,7 @@ class TestMyMath(unittest.TestCase):
         self.assertTrue(self.my_math.addition(2, 2) == expected_results)
         self.assertFalse(self.my_math.addition(2, 2) == 3)
 
-    def test_addition_success_big_numbers(self):    
+    def test_addition_success_big_numbers(self):
         """ Test function to check addition of two large numbers """
         expected_results_big = 4e9
         assert self.my_math.addition(2e9, 2e9) == expected_results_big
@@ -34,7 +34,7 @@ class TestMyMath(unittest.TestCase):
         self.assertTrue(self.my_math.addition(2e9, 2e9) == expected_results_big)
         self.assertFalse(self.my_math.addition(2e9, 2e9) == 3e9)
 
-    def test_addition_success_small_numbers(self):     
+    def test_addition_success_small_numbers(self):
         """ Test function to check addition of two small numbers """
         expected_results_small = 4e-9
         assert self.my_math.addition(2e-9, 2e-9) == expected_results_small
@@ -77,7 +77,7 @@ class TestMyMath(unittest.TestCase):
         """ Test function to check addition of two numbers with type mismatch """
         with self.assertRaises(TypeError):
             self.my_math.addition(2, '2')
-    
+
     def test_addition_type_error_pytest(self):
         """ Test function to check addition of two numbers with type mismatch (pytest way) """
         with pytest.raises(TypeError):
