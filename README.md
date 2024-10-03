@@ -1,4 +1,4 @@
 # unittest-practice
-Training for unittest
+Training for unittest.
 This repository is created for Python and Git training.
-Test
+Test.
